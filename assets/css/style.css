@@ -112,3 +112,152 @@ a {
   background: #1ebfc1;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
+
+/* ========== Hero ========== */
+.hero {
+  height: calc(100vh - 100px - var(--padding-header)); /*header height*/
+  padding: calc(50px - var(--padding-header)) 0 79px;
+}
+
+.hero .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__content {
+  width: 458px;
+}
+
+.hero__sub-title {
+  color: #767e7e;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.hero__heading {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16; /* 116.129% */
+}
+
+.hero__desc {
+  width: 374px;
+  margin-top: 46px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.78; /* 177.778% */
+  word-break: break-word;
+}
+
+.hero__cta {
+  display: inline-block;
+  width: 186px;
+  padding: 0 20px;
+  margin-top: 52px;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 68px;
+}
+
+.hero__cta:hover {
+  opacity: 0.9;
+}
+
+.hero__figure {
+  width: 48%;
+  height: 100%;
+  position: relative;
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #e0f7f6;
+  object-fit: cover;
+}
+
+.hero__card {
+  position: absolute;
+}
+
+.hero__course {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 157px;
+  top: 149px;
+  left: -40px;
+  padding: 17px 25px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__card__icon--course {
+  position: relative;
+}
+
+.hero__card__icon--course img:last-child {
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+}
+
+.hero__card__label {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hero__course__label {
+  width: 55px;
+}
+
+.hero__schedule {
+  width: 124px;
+  bottom: 46px;
+  left: -65px;
+  padding: 16px 25px 23px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__schedule__label {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.hero__card__icon--schedule {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.hero__card__icon--schedule div:last-child {
+  margin-top: 6px;
+  width: 26px;
+  height: 6px;
+  border-radius: 3px;
+  background: #edf1f5;
+}
+
+.hero__student {
+  width: 207px;
+  bottom: 41px;
+  right: 45px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
