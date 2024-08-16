@@ -1,4 +1,114 @@
+/* ========== Common ========== */
 :root {
-  --color-cta: #2ac9bf;
   --color-heading: #0d1111;
+  --padding-header: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.6rem;
+
+  /* Optimize */
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased; /*only macOS*/
+  -moz-osx-font-smoothing: grayscale; /*only macOS*/
+}
+
+.content {
+  width: 1170px;
+  height: 100%;
+  max-width: calc(100vw - 48px);
+  margin: 0 auto;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========== Header ========== */
+.header {
+  padding: 52px 0px var(--padding-header);
+}
+
+.header--sticky {
+  position: sticky;
+  top: calc((52px - var(--padding-header)) * (-1));
+  z-index: 1;
+}
+
+.header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 127px;
+  height: 37px;
+}
+
+.header__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item a {
+  padding: 8px 19.5px; /* gap: 39px; */
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.nav__item a:hover {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.header__auth {
+  margin-left: 117px;
+  display: flex;
+}
+
+.header__btn {
+  width: 108px;
+  padding: 0 20px;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 48px;
+}
+
+.header__btn--sign-in {
+  color: #494949;
+  font-weight: 400;
+}
+
+.header__btn--sign-in:hover {
+  color: #1ebfc1;
+}
+
+.header__btn--sign-up {
+  border: solid 1px #1ebfc1;
+  border-radius: 6px;
+  color: #1ebfc1;
+  font-weight: 600;
+  background: transparent;
+}
+
+.header__btn--sign-up:hover {
+  color: #fff;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
