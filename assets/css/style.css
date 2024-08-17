@@ -704,3 +704,48 @@ a {
   bottom: 29px;
   right: 32px;
 }
+
+/* ========== CTA ========== */
+.cta {
+  margin: 65px 0;
+  padding: 76px 0 88px;
+  background: #def6f5;
+}
+
+.cta .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta__heading {
+  color: var(--color-heading);
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.cta__desc {
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.cta__btn-wrap {
+  width: 29%;
+}
+
+.cta__btn {
+  display: inline-block;
+  min-width: 168px;
+  padding: 0 41px;
+  margin-right: auto;
+  border-radius: 14px;
+  background: #2ac9bf;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 68px;
+}
