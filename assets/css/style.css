@@ -84,11 +84,11 @@ a {
 }
 
 .header__btn {
-  width: 108px;
-  padding: 0 20px;
+  min-width: 108px;
+  padding: 0 23px;
   font-size: 1.6rem;
   text-align: center;
-  line-height: 48px;
+  line-height: 46px; /*48px trừ đi boder*/
 }
 
 .header__btn--sign-in {
@@ -162,8 +162,8 @@ a {
 
 .hero__cta {
   display: inline-block;
-  width: 186px;
-  padding: 0 20px;
+  min-width: 186px;
+  padding: 0 41px;
   border-radius: 14px;
   background: #1ebfc1;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
