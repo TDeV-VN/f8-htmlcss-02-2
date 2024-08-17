@@ -199,6 +199,7 @@ a {
 .hero__figure {
   width: 48%;
   height: 100%;
+  max-width: 631px;
   position: relative;
 }
 
