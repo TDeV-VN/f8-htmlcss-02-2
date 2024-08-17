@@ -137,7 +137,7 @@ a {
 
 .hero__heading {
   margin-top: 18px;
-  color: #0d1111;
+  color: var(--color-heading);
   font-size: 6.2rem;
   font-weight: 700;
   line-height: 1.16; /* 116.129% */
@@ -314,4 +314,70 @@ a {
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* ========== Feature ========== */
+.feature {
+  padding: 130px 0 65px;
+}
+
+.feature__sub-title {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.feature__heading {
+  width: 577px;
+  margin-top: 18px;
+  color: var(--color-heading);
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.33; /* 133.333% */
+}
+
+.feature__desc {
+  width: 590px;
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.feature__list {
+  margin-top: 80px;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px 200px;
+  flex-wrap: wrap;
+}
+
+.feature__item {
+  width: 224px;
+  flex-shrink: 0;
+}
+
+.feature__item__img {
+  width: 102px;
+  height: 106px;
+}
+
+.feature__item__name {
+  display: -webkit-box;
+  line-clamp: var(--line-clamp, 1);
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 26px;
+  color: var(--color-heading);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.feature__item__desc {
+  margin-top: 16px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  line-height: 1.68; /* 168.75% */
 }
